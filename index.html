@@ -1,40 +1,29 @@
 ---
 layout: bootcamp
 root: .
-venue: Great Plains Network Meeting at Kansas State
-address:  Pavilion 1 - on the "P" level of the hotel
+venue: University of Illinois Institute for Genomic Biology
+address:  IGB Gatehouse Computer Laboratory
 country: United-States
-humandate: May 29-30, 2015
+humandate: Jul 13–14, 2015
 humantime: 8:30 am - 4:30 pm
-startdate: 2015-05-29
-enddate: 2015-05-30
+startdate: 2015-07-13
+enddate: 2015-07-14
 latlng: 
 registration: open
-host: ["Greg Monaco (Great Plains Network)"]
-instructor: ["Tracy Teal (Data Carpentry))"]
+host: ["KnowEng"]
+instructor: ["Neal Davis", "Jenny Drnevich", "Jessica Kirkpatrick"]
 assistant: []
-contact: tkteal@datacarpentry.org
-raw: raw.github.com/datacarpentry/2015-05-29-great-plains/gh-pages
-eventbrite: 
+contact: training@cse.illinois.edu
+raw: raw.github.com/uiuc-cse/2015-07-13-knoweng/gh-pages
+eventbrite: 17262489571
 
 ---
-<!--
-    Edit the values in the parameter block above to be appropriate for your bootcamp.
-    Please use three-letter month names for the 'humandate' field.
--->
-
-<!--
-    This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
--->
-
 
 <h2>General Information</h2>
-<p>
-    More information about this workshop is available at: <a href=https://github.com/datacarpentry/2015-05-29-great-plains/wiki>https://github.com/datacarpentry/2015-05-29-great-plains/wiki</a>
-</p>
 
 <p>
-Data Carpentry workshops are for any researcher who has data they want to analyze, and no prior computational experience is required. This hands-on workshop teaches basic concepts, skills and tools for working more effectively with data. We will cover data organization in spreadsheets, data cleaning, SQL, the command line, and R for data analysis and visualization using examples from biology. Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research. 
+Data Carpentry workshops are for any researcher who has data they want to analyze, and no prior computational experience is required. This hands-on workshop teaches basic concepts, skills and tools for working more effectively with data. We will cover data organization in spreadsheets, data cleaning, SQL, the command line, and R for data analysis and visualization using examples from biology. Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
+</p>
 <p>
 Data Carpentry's aim is to teach researchers basic concepts, skills,
 and tools for working with data so that they can get more done in less
@@ -43,55 +32,33 @@ time, and with less pain.
 <p>
 Preliminary schedule:
 <ul>
-<li>  Day 1 morning: Data organization in spreadsheets and data cleaning withe OpenRefine
-<li>  Day 1 afternoon: SQL for data management
-<li>  Day 2 morning: Introduction to R
-<li>  Day 2 afternoon: Data analysis and visualization in R
+<li>  Day 1 morning: Introduction to R
+<li>  Day 1 afternoon: Introduction to Bioconductor packages for R
+<li>  Day 2 morning: Introduction to Unix command line and working on a cluster
+<li>  Day 2 afternoon: Data management and access
 </ul>
-
-
 </p>
 
-<p>Updates will be posted to this website as they become available.</p>
+<p>The etherpad for this workshop can be found <a href = "https://etherpad.mozilla.org/Ff5L0cS8nF">here</a></p>
 
-<!--
-<p>Data files for the workshop are available at <a href = "/2015-01-15-cornell/data/biology/">the following link</a></p>
-
-<p>The etherpad for this workshop can be found <a href = "https://etherpad.mozilla.org/7XixtJSZJq">here</a></p>
-
-<p>A static copy of the etherpad as of 5:30 on Friday after the workshop ended is <a href ="etherpad-snapshot-530-Friday.html">here</a></p>
--->
-
-<!-- This block displays the instructors' names if they are available. -->
 {% if page.instructor %}
 
 <p>
-  <strong>Organizer:</strong>
+  <strong>Host:</strong>
   {{page.host | join: ', ' %}}
 </p>
 <p>
   <strong>Instructors:</strong>
   {{page.instructor | join: ', ' %}}
 </p>
-<p>
-  <strong>Assistants:</strong>
-  {{page.assistant | join: ', ' %}}
 
 {% endif %}
 
-<!--
-    Modify this block to reflect the target audience for your bootcamp.
-    In particular, if it is only open to people from a particular institution,
-    or if specialized prerequisite knowledge is required, please mention that.
--->
 <p>
   <strong>Who:</strong>
   The course is aimed at faculty, research staff, postdocs, graduate students, advanced undergraduates, and other researchers in any field. No prior computational experience is required. 
 </p>
 
-<!--
-    This block displays the address and links to a map showing directions.
--->
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
@@ -106,8 +73,6 @@ Preliminary schedule:
 <!--
     Modify the block below if there are any special requirements.
 -->
-<p>
-
 <p>
   <strong>Requirements:</strong>
 Data Carpentry's teaching is hands-on, so participants are encouraged to bring in and use their own laptops to insure the proper setup of tools for an efficient workflow once you leave the workshop.  (We will provide instructions on setting up the required software several days in advance, and the classroom will have computers with the software installed). <em> There are no pre-requisites, and we will assume no prior knowledge about the tools.</em> Participants are required to abide by Software Carpentry's
